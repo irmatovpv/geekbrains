@@ -20,3 +20,16 @@ class AutoYoulaItem(scrapy.Item):
     url = scrapy.Field()
     autor = scrapy.Field()
     specifications = scrapy.Field()
+
+
+class Instagram(scrapy.Item):
+    _id = scrapy.Field()
+    date_parse = scrapy.Field()
+    data = scrapy.Field()
+    img = scrapy.Field()
+
+class InstagramTag(Instagram):
+    pass
+
+class InstagramPost(Instagram):
+    pass

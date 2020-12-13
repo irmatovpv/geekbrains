@@ -14,6 +14,7 @@ LOG_LEVEL = 'DEBUG'
 SPIDER_MODULES = ['gb_parse.spiders']
 NEWSPIDER_MODULE = 'gb_parse.spiders'
 
+IMAGES_STORE = 'images'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 USER_AGENT = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36'
@@ -66,6 +67,7 @@ DEFAULT_REQUEST_HEADERS = {
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
    'gb_parse.pipelines.GbParsePipeline': 300,
+   # 'gb_parse.pipelines.GbImagePipeline': 200,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
